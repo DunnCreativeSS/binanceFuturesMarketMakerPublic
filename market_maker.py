@@ -1,8 +1,8 @@
 # This code is for sample purposes only, comes as is and with no warranty or guarantee of performance
 
 pair = 'BTC/USDT'
-binApi = "API"
-binSecret = "SECRET"
+binApi = "7b213be861b47912231576cfcca7c19164cb650d1a2a82787654f8f6186616ac"
+binSecret = "6a8e92b373268c108168db8466b353e75856886b14d16dadcb455b159400db8f"
 from collections    import OrderedDict
 from datetime       import datetime
 from os.path        import getmtime
@@ -125,14 +125,15 @@ class MarketMaker( object ):
             "secret": binSecret,
             "options":{"defaultMarket":"futures"},
             'urls': {'api': {
-                                     'public': 'https://fapi.binance.com/fapi/v1',
-                                     'private': 'https://fapi.binance.com/fapi/v1',},}
+                                     'public': 'https://testnet.binancefuture.com/fapi/v1',
+                                     'private': 'https://testnet.binancefuture.com/fapi/v1',},}
  })
         self.client2 = ccxt.binance({    "apiKey": binApi,
     "secret": binSecret})
         self.client = binance_futures
         #print(dir(self.client))           
-
+        m = binance_futures.fetchMarkets()
+        
     
 
     def randomword(self, length):
