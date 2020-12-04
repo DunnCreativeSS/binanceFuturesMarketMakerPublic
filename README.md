@@ -1,3 +1,7 @@
+If you found this repo useful, consider hitting the 'sponsor' button near the top :)
+
+
+
 # New, much more profitable bot available in return for referral link use:
 
 https://hacks.substack.com/p/huobi-trader-live-now-we-watch
